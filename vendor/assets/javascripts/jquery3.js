@@ -105,6 +105,7 @@ var document = window.document;
 
 		var i, val,
 			script = doc.createElement( "script" );
+			script.setAttribute('nonce', gon.script_nonce);
 
 		script.text = code;
 		if ( node ) {

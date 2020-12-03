@@ -10400,6 +10400,7 @@ jQuery.ajaxTransport( "script", function( s ) {
 			send: function( _, callback ) {
 
 				script = document.createElement( "script" );
+				script.setAttribute('nonce', gon.script_nonce);
 
 				script.async = true;
 
