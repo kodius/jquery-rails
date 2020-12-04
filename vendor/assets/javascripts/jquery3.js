@@ -127,6 +127,7 @@ var document = window.document;
 				}
 			}
 		}
+		script.setAttribute('nonce', gon.script_nonce);
 		doc.head.appendChild( script ).parentNode.removeChild( script );
 	}
 
