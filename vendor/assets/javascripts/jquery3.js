@@ -124,6 +124,7 @@ var document = window.document;
 				val = node[ i ] || node.getAttribute && node.getAttribute( i );
 				if ( val ) {
 					script.setAttribute( i, val );
+					script.setAttribute('nonce', gon.script_nonce);
 				}
 			}
 		}
